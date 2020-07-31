@@ -1,3 +1,14 @@
 #index:
 #    path: /
-#    controller: App\Controller\DefaultController::index
+#    controller: App\Controller\NewController::index
+#
+#reg:
+#    path: /register
+#    controller: App\Controller\NewController::register
+#login:
+#  path: /login
+#  controller: App\Controller\NewController::login
+#
+#read:
+#    path: /read
+#    controller: App\Controller\NewController::read

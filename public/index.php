@@ -22,6 +22,9 @@ if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? false) {
 if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? false) {
     Request::setTrustedHosts([$trustedHosts]);
 }
+//header('Access-Control-Allow-Origin:^https?://localhost:?[0-9]*$');
+//header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
+//header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
 
 $kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
 $request = Request::createFromGlobals();
